@@ -19,7 +19,22 @@ Here are some examples of lex patterns and their matching behavior:
 | `[^a-z]+`     | Match any string of one or more characters that do not include lowercase `a-z`.|
 
 ---
+---
 
+## Custom Scanner Header File
+
+The custom header file (`Lab2_sect_my_scanner.h`) defines the token types that the scanner will recognize:
+
+
+#define TYPE 1
+#define NAME 2
+#define TABLE_PREFIX 3
+#define PORT 4
+#define COLON 5
+#define IDENTIFIER 6
+#define INTEGER 7
+
+---
 ## Database Configuration File
 
 The configuration file (`Lab2_sect_config.in`) is used to define database parameters for the scanner. Below is the content of the file:
