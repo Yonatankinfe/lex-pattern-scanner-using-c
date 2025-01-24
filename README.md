@@ -25,35 +25,35 @@ Here are some examples of lex patterns and their matching behavior:
 The configuration file (`Lab2_sect_config.in`) is used to define database parameters for the scanner. Below is the content of the file:
 ---
 
-Compilation and Execution
+# Compilation and Execution
 
 Follow these steps to compile and execute the scanner:
 
-Step 1: Generate the scanner
+#### Step 1: Generate the scanner
 
-Run the lex file to generate the scanner:
++  Run the lex file to generate the scanner:
 
-lex Lab2_sect_my_scanner.l
++ lex Lab2_sect_my_scanner.l
 
-Step 2: Compile the scanner
+#### Step 2: Compile the scanner
 
-Compile the generated scanner file (lex.yy.c) and your C file:
++ Compile the generated scanner file (lex.yy.c) and your C file:
 
-gcc lex.yy.c Lab2_sect_my_scanner.c -o myscanner
++ gcc lex.yy.c Lab2_sect_my_scanner.c -o myscanner
 
-Step 3: Execute the scanner
+#### Step 3: Execute the scanner
 
-Run the compiled program:
++ Run the compiled program:
 
-./myscanner < Lab2_sect_config.in
++ ./myscanner < Lab2_sect_config.in
 
 
 ---
 
-Output Example
+## Output Example
 
 When you run the program, you will see token types and their corresponding text from the input file. For example:
-
+```bash
 Token: 1, Text: db_type
 Token: 5, Text: :
 Token: 6, Text: mysql
